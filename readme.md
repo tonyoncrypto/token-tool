@@ -27,6 +27,7 @@ File which contains 12 secret mnemonic phrases of your hd wallet in SEED_PHRASE 
  - ```npm install``` (installs dependencies including `truffle@5.11.5`)
  - Copiling smart contract ```npx truffle compile```
  - Deploying smart contract - ```npx truffle migrate --network=testnet``` Choose network from ```truffle-config.js``` file.
+
  - Verify smart contract on bscscan/etherscan (API Keys are needed)- ```npx truffle run verify Airdrop@{ContractAddress} --network testnet```
  - Once smart contract is deployed and verified, you can interect it from bscscan/etherscan
 
