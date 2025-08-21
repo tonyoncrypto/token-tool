@@ -3,7 +3,7 @@
 I have been across many DAPPs to Airdrop Tokens. I found that DAPPs are charging way more to just privide airdrop services. This smart contract and airdrop.js code will help you to deploy your BSC/Ethereum Tokens without costing you extra money.
 
 ### Micro Documentation
-we are using truffle framework for smart contract development and deployment. For auto airdrop we are using node.js script with web3.js for smart contract interation.
+We are using the Truffle framework for smart contract development and deployment. Truffle is installed locally via `npm` (pinned at version `5.11.5`), so no global installation is required. Use `npx truffle` or the provided npm scripts to run Truffle commands. For auto airdrop we are using a Node.js script with web3.js for smart contract interation.
 
 #### Files and usage
 ##### contracts/Airdrop.sol
@@ -24,10 +24,10 @@ File which contains 12 secret mnemonic phrases of your hd wallet in SEED_PHRASE 
 #### Commands to deploy and airdrop
 
 ##### Deploy smart contact
- - ```npm install```
- - Copiling smart contract ```truffle compile```
- - Deploying smart contract - ```truffle migrate --network=testnet``` Choose network from ```truffle-config.js``` file.
- - Verify smart contract on bscscan/etherscan (API Keys are needed)- ```truffle run verify Airdrop@{ContractAddress} --network testnet```
+ - ```npm install``` (installs dependencies including `truffle@5.11.5`)
+ - Copiling smart contract ```npx truffle compile```
+ - Deploying smart contract - ```npx truffle migrate --network=testnet``` Choose network from ```truffle-config.js``` file.
+ - Verify smart contract on bscscan/etherscan (API Keys are needed)- ```npx truffle run verify Airdrop@{ContractAddress} --network testnet```
  - Once smart contract is deployed and verified, you can interect it from bscscan/etherscan
 
 ##### Allowance
